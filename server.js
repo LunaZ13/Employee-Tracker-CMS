@@ -1,3 +1,4 @@
+// required dependencies
 const mysql = require('mysql2');
 const inquirer = require('inquirer');
 const consoleTable = require('console.table');
@@ -12,3 +13,25 @@ const db = mysql.createConnection(
     },
     console.log('Connected to the election employee.')
   );
+
+// inquirer prompt with options on what to do 
+
+
+
+
+
+
+
+// function to view departments
+
+
+
+
+// function to view roles
+
+
+
+// function to view employees
+
+
+
