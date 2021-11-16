@@ -1,27 +1,31 @@
 # Employee Tracker CMS
 
 ## Description: 
-I was tasked with creating a command line application that will dynamically generate a professional README file. The user is prompted with questions about their project and a README.MD file is generated with the users input.
+I was tasked with creating a command line application to manage a company's employee database. The application is called "Employee Tracker". It will allow you to view and manage departments, roles, and employees in your company. This is interface is called a content management system, and it allows users to view and interact with information stored in a database.
 
 ## Installation:
-* Clone repository
+* Clone repository git@github.com:LunaZ13/Employee-Tracker-CMS.git
 * Install Node.js (npm install)
 * npm install inquirer
 
 ## Usage:
-Open the terminal. When you type in index.js, you will be prompted with a series of questions that will then generate a README file in the src folder. See demo below.
+Run the following command in your terminal or watch demo below.
+`node server.js`
 
-https://user-images.githubusercontent.com/86627336/138976440-d2ad8094-58fb-4dab-b579-4287b2bb152c.mp4
+https://user-images.githubusercontent.com/86627336/141928323-be87b757-0990-41b7-8a75-843343e3e05a.mp4
 
 ## Contributing:
 Feel free to fork project and reach out.
 
-## Test:
-No test for this project.
+## Built With:
+* MYSQL
+* Node.js
+* Express.js
+* JavaScript
+
 
 ## Credits:
-UofM Coding Boot Camp
-Refactored by Inmar Luna :grinning:
+Created by Inmar Luna :grinning:
 
 ## License 
 

@@ -11,9 +11,12 @@ const db = mysql.createConnection(
       password: '',
       database: 'employee'
     },
-    console.log('======================================='),
-    console.log('=== Connected To Employee Database. ==='),
-    console.log('=======================================')
+    console.log('***************************************'),
+    console.log('*                                     *'),
+    console.log('*        Employee Database            *'),
+    console.log('*                                     *'),
+    console.log('***************************************')
+
 
   );
 
@@ -70,9 +73,9 @@ function promptUser() {
 function viewDepartments() {
     console.log('Viewing all Departments.');
     const sql = `SELECT * FROM department`;
-    db.query(sql, function(err, rows) {
+    db.query(sql, function(err, data) {
         if (err) throw err;
-        console.table(rows);
+        console.table(data);
         promptUser();
     });
 }
@@ -123,7 +126,6 @@ function addRole() {
     const sql = `SELECT * FROM role`;
     db.query(sql, function(err, data) {
         if (err) throw err;
-        console.table(data)
 
         var deptArray = []
 
