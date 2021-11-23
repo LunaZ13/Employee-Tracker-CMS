@@ -126,6 +126,7 @@ function addRole() {
     const sql = `SELECT * FROM role`;
     db.query(sql, function(err, data) {
         if (err) throw err;
+        console.log(data);
 
         var deptArray = []
 
@@ -155,11 +156,11 @@ function addRole() {
     ])
     .then(function(answer) {
         const sql = `INSERT INTO role (title, salary, department_id) VALUES (?,?,?)`;
+        console.log('ABOUT TO ADD ROLE!!')
         db.query(sql, [answer.title, answer.salary, answer.deptID], function(err, data) {
             if (err) throw err;
             console.log('Successfully added a new role!')
             viewRoles();
-            promptUser();
             });
         });
     });
@@ -204,7 +205,6 @@ function addEmployee() {
             if (err) throw err;
             console.log('Successfully added a new employee!')
             viewEmployees();
-            promptUser();
             });
         });
 }
